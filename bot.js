@@ -326,7 +326,7 @@ client.on('message', message => {
         .addField('fresume', 'تكملة الاغنية')
         .addField('fqueue', 'اظهار قائمة التشغيل')
         .addField('fnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(general_commands) لاظهار الاوامر العامة')
+        .setFooter('تم برمجة البوت من قبل Hady Khaled#6687')
       message.channel.send(helpEmbed);
     }
 });
