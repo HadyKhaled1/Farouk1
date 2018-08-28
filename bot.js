@@ -36,7 +36,7 @@ client.on('message', async msg =>{
 
     if(command === `ping`) {
     let embed = new Discord.RichEmbed()
-    .setColor(3447003)
+    .setColor(#0099cc)
     .setTitle("Pong!!")
     .setDescription(`${client.ping} ms,`)
     .setFooter(`Requested by | ${msg.author.tag}`);
@@ -63,12 +63,12 @@ client.on('message', async msg =>{
           let sicon = msg.author.avatarURL
           let embed = new Discord.RichEmbed()
           .setImage(msg.author.avatarURL)
-          .setColor("#5074b3")
+          .setColor("#0099cc")
           msg.channel.send({embed})
         } else {
           let sicon = mentions.user.avatarURL
           let embed = new Discord.RichEmbed()
-          .setColor("#5074b3")
+          .setColor("#0099cc")
           .setImage(sicon)
           msg.channel.send({embed})
         }
@@ -225,7 +225,7 @@ client.on('message', async msg => {
         .setDescription(`
         ${serverQueue.songs.map(song => `${++index}. **${song.title}**`).join('\n')}
 **Now playing :** **${serverQueue.songs[0].title}**`)
-        .setColor("#f7abab")
+        .setColor("#0099cc")
 		return msg.channel.sendEmbed(embedqu);
 	} else if (command === `pause`) {
 		if (serverQueue && serverQueue.playing) {
