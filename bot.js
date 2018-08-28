@@ -21,7 +21,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({482685493914632193: true});
 
-const prefix = "!";
+const prefix = "f";
 /////////////////////////
 ////////////////////////
 
@@ -318,14 +318,14 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
-        .addField('play', 'لتشغيل اغنية')
-        .addField('join', 'دخول رومك الصوتي')
-        .addField('disconnect', 'الخروج من رومك الصوتي')
-        .addField('skip', 'تخطي الأغنية')
-        .addField('pause', 'ايقاف الاغنية مؤقتا')
-        .addField('resume', 'تكملة الاغنية')
-        .addField('queue', 'اظهار قائمة التشغيل')
-        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('fplay', 'لتشغيل اغنية')
+        .addField('fjoin', 'دخول رومك الصوتي')
+        .addField('fdisconnect', 'الخروج من رومك الصوتي')
+        .addField('fskip', 'تخطي الأغنية')
+        .addField('fpause', 'ايقاف الاغنية مؤقتا')
+        .addField('fresume', 'تكملة الاغنية')
+        .addField('fqueue', 'اظهار قائمة التشغيل')
+        .addField('fnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
         .setFooter('(general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
@@ -344,4 +344,3 @@ client.on('message', message => {
 });
 
 client.login(process.env.fsNRv9FEKRRB_ERVC3JKAzMuoCVoKBAp);
-
