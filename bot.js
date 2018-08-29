@@ -36,7 +36,7 @@ client.on('message', async msg =>{
 
     if(command === `ping`) {
     let embed = new Discord.RichEmbed()
-    .setColor(#0099cc)
+    .setColor(3447003)
     .setTitle("Pong!!")
     .setDescription(`${client.ping} ms,`)
     .setFooter(`Requested by | ${msg.author.tag}`);
